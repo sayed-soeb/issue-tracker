@@ -2,7 +2,7 @@ require("dotenv").config();
 const mongoose = require('mongoose');
 
 // here we are using the MongoDB Url we defined in our ENV file
-let DB_URL =process.env.db;
+let DB_URL ="mongodb+srv://sayedsoeb1:osomatsu@cluster0.9n5cij5.mongodb.net/issues?retryWrites=true&w=majority";
 //console.log(process.env.db);
 //connect to the database
 mongoose.connect(DB_URL , 
