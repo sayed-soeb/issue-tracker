@@ -1,0 +1,17 @@
+
+<div class="w-50 border border-secondary border-1 p-3 m-auto"
+style="background: rgba(255,255,255,0.25);">
+  <h3 class="display-5 p-3 mb-2 text-white"
+  style="background: linear-gradient(to right,#cbb4d4,#20002c);">
+    Project : <%= project.name %>
+  </h3>
+  <h4 class="display-6 p-3 mb-2 text-white"
+  style="background: linear-gradient(to right,#cbb4d4,#20002c);">
+    Author : <%= project.author %>
+  </h4>
+  <h5 class="display-6 p-3 mb-2 text-white"
+  style="background: linear-gradient(to right,#cbb4d4,#20002c);">
+    Description : <%= project.description %>
+  </h5>
+</div>
+<%-include('./partials/_issues'); %>

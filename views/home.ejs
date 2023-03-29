@@ -1,0 +1,25 @@
+<div class="mb-5 p-5">
+    <% for( let project of projects ) { %>
+    <div class="card mb-2 w-50 m-auto ">
+      <div class="card-header text-white bg-secondary">
+        <strong> Name of the project : </strong><%= project.name %>
+        <div class="text-end float-end">
+          <form action="/project/deleteProject/<%=project._id%>"><button class="fa fa-trash"></form>
+        </div>
+      </div>
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">
+          <strong> Author : </strong> <%= project.author %>
+        </h6>
+        <p class="card-text">
+          <strong> Description : </strong><%= project.description %>
+        </p>
+        <div class="m-auto text-center" >
+          <a href="/project/<%=project._id%>" class="btn m-auto text-white" style="background: linear-gradient(to right,#cbb4d4,#20002c);"
+            >Open project</a
+          >
+        </div>
+      </div>
+    </div>
+    <% } %>
+  </div>
